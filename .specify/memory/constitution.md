@@ -1,55 +1,48 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+    Sync Impact Report:
+    - Version change: 0.0.0 -> 1.0.0
+    - List of modified principles:
+        - [PRINCIPLE_1_NAME] -> I. Specification-Driven Development
+        - [PRINCIPLE_2_NAME] -> II. Source-Verified Technical Accuracy
+        - [PRINCIPLE_3_NAME] -> III. Clarity for Developers
+        - [PRINCIPLE_4_NAME] -> IV. Content-Grounded AI
+    - Added sections: Key Standards, Constraints
+    - Removed sections: PRINCIPLE_5, PRINCIPLE_6
+    - Templates requiring updates:
+        - ✅ .specify/templates/plan-template.md
+        - ✅ .specify/templates/spec-template.md
+        - ✅ .specify/templates/tasks-template.md
+-->
+# Unified AI/spec-Driven Book with Embedded RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Specification-Driven Development
+The project is developed using Spec-Kit Plus to ensure a reproducible setup and deployment. All development work is guided by specifications.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Source-Verified Technical Accuracy
+All technical content must be accurate and verifiable. Claude Code will be used for structured content generation to maintain high quality.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Clarity for Developers
+Explanations and documentation should be clear, concise, and aimed at a developer audience.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Content-Grounded AI
+The RAG chatbot must not hallucinate. Its answers must be strictly grounded in the content of the book. When an answer cannot be found, it must provide a clear fallback response.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Key Standards
+- Book written in Markdown/MDX using Docusaurus and deployed on github pages
+- Claude Code for structured content generation
+- Spec-Kit Plus defines chapters and constraints
+- RAG stack: OpenAI Agents/ChatKit, FastAPI, Qdrant Cloud (Free), Neon Postgres
+- Chatbot supports full-book and selected-text Q&A
 
-### [PRINCIPLE_6_NAME]
-
-
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Constraints
+- Deploy to GitHub Pages
+- RAG responses limited to indexed book content
+- Clear fallback when answer not found
+- Clean, modular, open-source–compliant code
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This Constitution is the single source of truth for project principles and standards. All development artifacts, including specifications, plans, and code, must adhere to it. Amendments require a documented proposal, review, and approval process.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-28 | **Last Amended**: 2025-12-28

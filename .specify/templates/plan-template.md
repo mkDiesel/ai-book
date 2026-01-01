@@ -31,7 +31,10 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Spec-Driven Development**: Does a feature specification exist at `/specs/[###-feature-name]/spec.md`?
+- [ ] **Technical Accuracy**: Are the tools and sources for content generation (e.g., Claude Code) clearly defined?
+- [ ] **Developer Clarity**: Is the technical approach documented clearly enough for another developer to understand?
+- [ ] **Grounded AI**: If an AI/RAG component is involved, are there explicit safeguards to prevent hallucination and ensure responses are grounded in the provided content?
 
 ## Project Structure
 
